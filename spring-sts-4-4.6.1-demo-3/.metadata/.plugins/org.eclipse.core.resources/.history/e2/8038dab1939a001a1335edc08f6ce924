@@ -1,0 +1,8 @@
+server.port=8069
+eureka.instance.leaseRenewalIntervalInSeconds=10
+eureka.instance.health-check-url-path=/actuator/health
+eureka.instance.metadata-map.startup=5    #needed to trigger info and endpoint update after restart
+eureka.client.registryFetchIntervalSeconds=5
+eureka.client.registerWithEureka=true
+eureka.client.fetchRegistry=true
+eureka.client.serviceUrl.defaultZone=http://localhost:8061/eureka/

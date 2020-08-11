@@ -1,0 +1,178 @@
+version: '3.7'
+
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017-27019:27017-27019"
+    restart: always
+      
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    restart: always
+    depends_on: 
+      - mongodb    
+      
+  config-service:
+    image: config-service
+    container_name: config-service
+    ports:
+      - "8088:8088"
+    restart: always
+    depends_on: 
+      - mongodb
+      - zipkin
+
+  discovery-service:
+    image: discovery-service
+    container_name: discovery-service
+    ports:
+      - "8061:8061"
+    restart: always
+    depends_on: 
+      - config-service
+    links:
+      - config-service
+      
+  employee-service:
+    image: employee-service
+    container_name: employee-service
+    ports:
+      - "8001:8001"
+    restart: always
+    depends_on: 
+      - discovery-service
+    links:
+      - config-service
+      - discovery-service
+      - mongodb
+      - zipkin
+
+  department-service:
+    image: department-service
+    container_name: department-service
+    ports:
+      - "8011:8011"
+    restart: always
+    depends_on: 
+      - employee-service
+    links:
+      - config-service
+      - discovery-service
+      - mongodb
+      - zipkin
+      - employee-service       
+
+  organization-service:
+    image: organization-service
+    container_name: organization-service
+    ports:
+      - "8021:8021"
+    restart: always
+    depends_on: 
+      - department-service
+    links:
+      - config-service
+      - discovery-service
+      - mongodb
+      - zipkin
+      - employee-service     
+      - department-service      
+
+  gateway-service:
+    image: gateway-service
+    container_name: gateway-service
+    ports:
+      - "8060:8060"
+    restart: always
+    depends_on: 
+      - organization-service
+    links:
+      - config-service
+      - discovery-service
+      - zipkin
+      - employee-service     
+      - department-service    
+      - organization-service      
+
+  admin-server:
+    image: admin-server
+    container_name: admin-server
+    ports:
+      - "8065:8065"
+    restart: always
+    depends_on: 
+      - gateway-service
+    links:
+      - config-service
+      - discovery-service
+      - employee-service     
+      - department-service 
+      - organization-service      
+      - gateway-service
+
+  hystrix-server:
+    image: hystrix-server
+    container_name: hystrix-server
+    ports:
+      - "8067:8067"
+    restart: always
+    depends_on: 
+      - admin-server
+    links:
+      - config-service
+      - discovery-service
+      - employee-service     
+      - department-service  
+      - organization-service      
+      - admin-server
+      - turbine-server      
+      
+  turbine-server:
+    image: turbine-server
+    container_name: turbine-server
+    ports:
+      - "8069:8069"
+    restart: always
+    depends_on: 
+      - admin-server
+    links:
+      - config-service
+      - discovery-service
+      - employee-service     
+      - department-service  
+      - organization-service      
+      - admin-server      
+
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    restart: always
+    depends_on: 
+      - turbine-server
+    links:
+      - employee-service     
+      - department-service  
+      - organization-service      
+      - turbine-server   
+    volumes:
+      - /home/ubuntu/microservices/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on: 
+      - prometheus
+    links:
+      - prometheus    
+    volumes:
+      - /home/ubuntu/microservices/grafana:/var/lib/grafana

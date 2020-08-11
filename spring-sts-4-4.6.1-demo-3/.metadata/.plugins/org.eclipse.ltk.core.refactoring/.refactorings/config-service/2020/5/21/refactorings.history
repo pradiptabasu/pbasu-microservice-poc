@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;department-service.yml&apos; to &apos;config&apos;&#x0D;&#x0A;- Original project: &apos;config-service&apos;&#x0D;&#x0A;- Destination element: &apos;config&apos;&#x0D;&#x0A;- Original element: &apos;department-service.yml&apos;" description="Copy file" element1="src/main/resources/config/department-service.yml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1589961937249" target="/config-service/src/main/resources/config" units="0" version="1.0"/>
+</session>

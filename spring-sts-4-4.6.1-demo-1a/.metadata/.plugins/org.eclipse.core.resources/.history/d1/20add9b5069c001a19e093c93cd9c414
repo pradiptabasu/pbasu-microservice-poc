@@ -1,0 +1,22 @@
+package com.example.pradipta.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetingsController {
+	
+	@Value("${generic.greetings}")	
+	private String greetingsMessage;
+	
+	public GreetingsController() {
+		
+	}
+	
+	@GetMapping("/greet/{name}")
+    public String greet() {
+
+	    return "Hello from " + InetAddress.getLocalHost().getHostName();
+    }
+}

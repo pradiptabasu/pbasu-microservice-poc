@@ -1,0 +1,16 @@
+package com.pradipta.organization.fallback;
+
+import java.util.List;
+
+import com.pradipta.organization.client.EmployeeClient;
+import com.pradipta.organization.model.Employee;
+
+public class EmployeeClientFallback implements EmployeeClient {
+
+	@Override
+	public List<Employee> findByOrganization(Long organizationId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

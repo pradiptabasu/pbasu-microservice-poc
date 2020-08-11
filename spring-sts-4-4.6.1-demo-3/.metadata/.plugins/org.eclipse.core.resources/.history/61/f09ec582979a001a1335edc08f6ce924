@@ -1,0 +1,5 @@
+spring.application.name=turbine-server
+server.port=8069
+eureka.client.serviceUrl.defaultZone=http://localhost:8061/eureka/
+turbine.aggregator.clusterConfig=EMPLOYEE-SERVICE,DEPARTMENT-SERVICE,ORGANIZATION-SERVICE
+turbine.appConfig=employee-service,department-service,organization-service

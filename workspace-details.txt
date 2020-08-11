@@ -1,0 +1,21 @@
+workspace-1
+	demo with data
+	
+workspace-1a
+	deploy the setup on docker
+	
+workspace-2
+	sleuth & zipkin
+	
+workspace-3
+	Actuator activate endpoints
+	Link Spring Boot Admin Dashboard
+	Hystrix
+	Prometheus 
+	Grafana
+	
+workspace-4
+	MongoDB
+	
+workspace-5
+	Dockerize

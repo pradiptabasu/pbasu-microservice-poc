@@ -1,0 +1,10 @@
+package com.example.pradipta.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetingsController {
+	
+	@Value("${generic.greetings}")	
+	private String greetingsMessage;
+}

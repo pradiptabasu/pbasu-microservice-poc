@@ -1,0 +1,4 @@
+server.port=8069
+eureka.client.serviceUrl.defaultZone=http://localhost:8061/eureka/
+turbine.aggregator.clusterConfig= employee-service,department-service,organization-service
+turbine.appConfig= employee-service,department-service,organization-service

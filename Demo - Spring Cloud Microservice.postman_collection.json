@@ -1,0 +1,625 @@
+{
+	"info": {
+		"_postman_id": "bf6f6ec6-c711-457f-a38b-d93c6ebd4077",
+		"name": "Demo - Spring Cloud Microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "employee-service",
+			"item": [
+				{
+					"name": "Add Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 4,\n\t\"organizationId\": 1,\n\t\"departmentId\": 1,\n\t\"name\": \"Sarah Conner\",\n\t\"age\": 30,\n\t\"position\": \"Consultant\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{employeehost}}:{{employeeport}}/",
+							"protocol": "http",
+							"host": [
+								"{{employeehost}}"
+							],
+							"port": "{{employeeport}}",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{employeehost}}:{{employeeport}}/",
+							"protocol": "http",
+							"host": [
+								"{{employeehost}}"
+							],
+							"port": "{{employeeport}}",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{employeehost}}:{{employeeport}}//1",
+							"protocol": "http",
+							"host": [
+								"{{employeehost}}"
+							],
+							"port": "{{employeeport}}",
+							"path": [
+								"",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Organization Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{employeehost}}:{{employeeport}}//organization/2",
+							"protocol": "http",
+							"host": [
+								"{{employeehost}}"
+							],
+							"port": "{{employeeport}}",
+							"path": [
+								"",
+								"organization",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Department Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{employeehost}}:{{employeeport}}//department/2",
+							"protocol": "http",
+							"host": [
+								"{{employeehost}}"
+							],
+							"port": "{{employeeport}}",
+							"path": [
+								"",
+								"department",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "gateway-service",
+			"item": [
+				{
+					"name": "Add Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 3,\n\t\"organizationId\": 4,\n\t\"departmentId\": 4,\n\t\"name\": \"Carrie Mathison\",\n\t\"age\": 30,\n\t\"position\": \"Analyst\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/1",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Organization Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/organization/1",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Department Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/department/3",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								"department",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "proxy-service",
+			"item": [
+				{
+					"name": "Add Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 4,\n\t\"organizationId\": 4,\n\t\"departmentId\": 4,\n\t\"name\": \"Carrie Mathison\",\n\t\"age\": 30,\n\t\"position\": \"Analyst\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{zuulhost}}:{{zullport}}/employee/",
+							"protocol": "http",
+							"host": [
+								"{{zuulhost}}"
+							],
+							"port": "{{zullport}}",
+							"path": [
+								"employee",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List All Employees Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Id Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/1",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Organization Id Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/organization/1",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By Department Id Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://{{cloudgatewayhost}}:{{cloudgatewayport}}/employee/department/3",
+							"protocol": "http",
+							"host": [
+								"{{cloudgatewayhost}}"
+							],
+							"port": "{{cloudgatewayport}}",
+							"path": [
+								"employee",
+								"department",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "department-service",
+			"item": [
+				{
+					"name": "Get All Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 2,\n\t\"organizationId\": 2,\n\t\"name\": \"Delivery\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8011/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Department by OrganizationId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/organization/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"organization",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Department by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Department & Employees by Organization Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8011/organization/1/with-employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8011",
+							"path": [
+								"organization",
+								"1",
+								"with-employees"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "organization-service",
+			"item": [
+				{
+					"name": "List All Departments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8021/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8021",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert Department",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\": 3,\n\t\"name\": \"Bolt\",\n\t\"address\": \"Hungary\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8021/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8021",
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8021/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8021",
+							"path": [
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization with Departments by OrganizationId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8021/1/with-departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8021",
+							"path": [
+								"1",
+								"with-departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization with Employees by OrganizationId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8021/1/with-employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8021",
+							"path": [
+								"1",
+								"with-employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Organization with Departments and Employees by OrganizationId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8021/1/with-departments-and-employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8021",
+							"path": [
+								"1",
+								"with-departments-and-employees"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: employee-service
+  cloud:
+    config:
+      uri: http://config-service:8088
+      
+      

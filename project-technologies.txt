@@ -1,0 +1,91 @@
+https://dzone.com/articles/quick-guide-to-microservices-with-spring-boot-20-e
+https://piotrminkowski.com/2020/02/20/microservices-api-documentation-with-springdoc-openapi/
+
+Spring 2.1.14.RELEASE & Greenwich.SR5
+
+config-server
+	Config				@EnableConfigServer
+	
+discovery-service	
+	Eureka 				@EnableEurekaServer
+	Config client
+	
+employee-service
+	Spring Web
+	Config client
+	Eureka Client
+	Actuator
+	Micrometer
+	Sleuth
+	springfox-swagger2
+	springdoc-openapi-webmvc-core
+	Zipkin
+	Mongo DB
+	
+department-service
+	Spring Web
+	Config client
+	Eureka Client
+	Actuator
+	Micrometer
+	Sleuth
+	openfeign
+	springfox-swagger2	
+	springdoc-openapi-webmvc-core
+	Zipkin
+	Hystrix
+	Mongo DB
+	
+organization-service						
+	Spring Web
+	Config client
+	Eureka Client
+	Actuator
+	Micrometer
+	Sleuth
+	openfeign
+	springfox-swagger2	
+	springdoc-openapi-webmvc-core
+	Zipkin
+	Hystrix
+	Mongo DB
+	
+gateway-service
+	Config client
+	Eureka client
+	Gateway server (Greenwich.SR4)
+	Sleuth
+	springdoc-openapi-webflux-core
+	springdoc-openapi-webflux-ui
+	Zipkin
+	
+proxy-service
+	Config client
+	Eureka client
+	springfox-swagger-ui
+	springfox-swagger2
+	Zuul
+	
+
+admin-server
+	Spring Admin Server
+	Eureka Client
+	Config client
+	
+hystrix-server
+	Spring Admin Server
+	Eureka Client
+	Config client
+	Hystrix Dashboard
+
+turbine-server
+	Spring Admin Server
+	Eureka Client
+	Config client	
+	Turbine
+	Hystrix Dashboard
+	
+	
+
+Spring Boot Technologies
+In order to have our architechture running we are going to need to use Spring Boot components and those will be:

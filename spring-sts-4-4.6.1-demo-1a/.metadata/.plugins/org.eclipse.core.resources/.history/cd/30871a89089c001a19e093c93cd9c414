@@ -1,0 +1,11 @@
+server:
+  port: 9003
+  
+spring:
+  application:
+    name: hello-world
+  cloud:
+    config:
+      uri: http://localhost:9004
+      
+      

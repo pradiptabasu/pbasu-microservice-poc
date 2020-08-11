@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    config:
+      uri: http://config-service:8088
+  sleuth:
+    sampler:
+      probability: 1.0  
+      
+#springdoc:
+#  api-docs:
+#    path:

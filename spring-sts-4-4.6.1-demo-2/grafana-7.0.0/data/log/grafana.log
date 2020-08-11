@@ -1,0 +1,216 @@
+t=2020-05-22T00:00:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:01:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:02:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:03:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:04:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:05:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:06:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:07:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:08:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:09:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:10:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:11:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:12:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:13:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:14:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:15:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:16:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:17:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:18:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:19:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:20:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:21:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:22:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:23:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:24:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:25:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:26:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:27:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:28:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:29:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:30:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:31:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:32:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:33:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:34:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:35:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:36:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:37:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:38:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:39:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:40:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:41:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:42:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:43:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:44:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:45:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:46:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:47:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:48:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:49:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:50:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:51:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:52:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:53:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:54:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:55:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:56:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:57:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:58:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T00:59:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:00:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:01:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:02:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:03:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:04:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:05:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:06:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:07:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:08:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:09:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:10:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:11:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:12:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:13:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:14:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:15:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:16:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:17:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:18:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:19:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:20:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:21:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:22:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:23:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:24:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:25:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:26:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:27:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:28:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:29:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:30:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:31:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:32:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:33:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:34:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:35:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:36:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:37:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:38:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:39:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:40:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:41:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:42:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:43:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:44:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:45:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:46:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:47:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:48:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:49:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:50:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:51:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:52:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:53:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:54:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:55:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:56:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:57:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:58:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T01:59:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:00:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:01:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:02:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:03:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:04:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:05:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:06:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:07:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:08:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:09:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:10:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:11:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:12:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:13:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:14:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:15:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:16:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:17:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:18:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:19:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:20:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:21:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:22:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:23:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:24:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:25:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:26:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:27:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:28:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:29:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:30:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:31:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:32:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:33:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:34:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:35:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:36:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:37:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:38:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:39:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:40:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:41:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:42:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:43:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:44:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:45:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:46:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:47:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:48:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:49:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:50:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:51:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:52:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:53:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:54:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:55:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:56:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:57:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:58:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T02:59:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-22T03:00:01+0530 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=1 newState=ok prev state=no_data
+t=2020-05-22T20:49:46+0530 lvl=info msg="Shutdown started" logger=server reason="System signal: interrupt"
+t=2020-05-22T20:49:46+0530 lvl=info msg="Stopped Stream Manager"
+t=2020-05-27T17:11:17+0530 lvl=info msg="Starting Grafana" logger=server version=7.0.0 commit=aee1438ff2 branch=HEAD compiled=2020-05-15T20:00:30+0530
+t=2020-05-27T17:11:17+0530 lvl=info msg="Config loaded from" logger=settings file=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0/conf/defaults.ini
+t=2020-05-27T17:11:17+0530 lvl=info msg="Path Home" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0
+t=2020-05-27T17:11:17+0530 lvl=info msg="Path Data" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\data
+t=2020-05-27T17:11:17+0530 lvl=info msg="Path Logs" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\data\\log
+t=2020-05-27T17:11:17+0530 lvl=info msg="Path Plugins" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\data\\plugins
+t=2020-05-27T17:11:17+0530 lvl=info msg="Path Provisioning" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\conf\\provisioning
+t=2020-05-27T17:11:17+0530 lvl=info msg="App mode production" logger=settings
+t=2020-05-27T17:11:17+0530 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-05-27T17:11:17+0530 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-05-27T17:11:17+0530 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-05-27T17:11:18+0530 lvl=info msg="Registering plugin" logger=plugins name="Direct Input"
+t=2020-05-27T17:11:18+0530 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-05-27T17:11:32+0530 lvl=info msg="Shutdown started" logger=server reason="System signal: interrupt"
+t=2020-05-27T17:12:54+0530 lvl=info msg="Starting Grafana" logger=server version=7.0.0 commit=aee1438ff2 branch=HEAD compiled=2020-05-15T20:00:30+0530
+t=2020-05-27T17:12:54+0530 lvl=info msg="Config loaded from" logger=settings file=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0/conf/defaults.ini
+t=2020-05-27T17:12:54+0530 lvl=info msg="Path Home" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0
+t=2020-05-27T17:12:54+0530 lvl=info msg="Path Data" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\data
+t=2020-05-27T17:12:54+0530 lvl=info msg="Path Logs" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\data\\log
+t=2020-05-27T17:12:54+0530 lvl=info msg="Path Plugins" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\data\\plugins
+t=2020-05-27T17:12:54+0530 lvl=info msg="Path Provisioning" logger=settings path=D:\\Workspace\\spring-sts-4-4.6.1-demo-2\\grafana-7.0.0\\conf\\provisioning
+t=2020-05-27T17:12:54+0530 lvl=info msg="App mode production" logger=settings
+t=2020-05-27T17:12:54+0530 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2020-05-27T17:12:54+0530 lvl=info msg="Starting DB migration" logger=migrator
+t=2020-05-27T17:12:54+0530 lvl=info msg="Starting plugin search" logger=plugins
+t=2020-05-27T17:12:54+0530 lvl=info msg="Registering plugin" logger=plugins name="Direct Input"
+t=2020-05-27T17:12:54+0530 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+t=2020-05-27T17:13:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-27T17:13:01+0530 lvl=info msg="New state change" logger=alerting.resultHandler ruleId=1 newState=no_data prev state=ok
+t=2020-05-27T17:14:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-27T17:15:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-27T17:16:01+0530 lvl=info msg="Alert Rule returned no data" logger=alerting.evalContext ruleId=1 name="Memory Saturation alert" changing state to=no_data
+t=2020-05-27T17:16:19+0530 lvl=info msg="Shutdown started" logger=server reason="System signal: interrupt"

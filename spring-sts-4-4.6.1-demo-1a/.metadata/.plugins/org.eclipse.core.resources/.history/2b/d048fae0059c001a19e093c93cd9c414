@@ -1,0 +1,21 @@
+package com.example.pradipta.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetingsController {
+	
+	@Value("${generic.greetings}")	
+	private String greetingsMessage;
+	
+	public GreetingsController() {
+		
+	}
+	
+	@GetMapping("")
+    public String helloWorld() throws UnknownHostException {
+
+	    return "Hello from " + InetAddress.getLocalHost().getHostName();
+    }
+}

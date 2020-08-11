@@ -1,0 +1,10 @@
+# docker build -f Dockerfile -t pbasu4-springboot-helloworldapp .
+# docker run -d -p 9004:9004 --name latest-pbasu4-springboot-helloworldapp pbasu4-springboot-helloworldapp:latest 
+
+FROM openjdk:8-jdk-alpine
+MAINTAINER pradipta.basu1@dxc.com
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENV JAVA_OPTS=""
+EXPOSE 9004
+ENTRYPOINT ["java","-jar","/app.jar"]
