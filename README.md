@@ -781,3 +781,23 @@ https://github.com/MitocGroup/deep-microservices-helloworld
 * 
 * 
 * 
+
+
+
+# Build Packs
+* https://github.com/buildpacks
+* https://www.heroku.com/elements/buildpacks#:~:text=Buildpacks%20are%20composed%20of%20a,is%20needed%20for%20the%20job.
+* https://docs.cloudfoundry.org/buildpacks/
+* https://buildpacks.io/
+* https://devcenter.heroku.com/articles/buildpacks
+* https://paketo.io/
+* https://landscape.cncf.io/selected=buildpacks
+* https://medium.com/@TimvanBaarsen/first-look-at-cloud-native-buildpacks-support-in-spring-boot-2-3-milestone-1-ece8e72ed93f
+* https://github.com/cloudfoundry/java-buildpack
+* https://github.com/paketo-buildpacks/spring-boot
+* 
+* 
+* 
+* 
+* 
+* 
