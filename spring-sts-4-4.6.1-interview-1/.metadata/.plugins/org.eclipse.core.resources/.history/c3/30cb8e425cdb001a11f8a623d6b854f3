@@ -1,0 +1,14 @@
+package com.interview.pbasu.cache.customizer;
+
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.scheduling.annotation.Scheduled;
+
+public class CacheTimeOutForSimpleCache {
+
+	@CacheEvict(allEntries = true, cacheNames = { "allProducts", "availableProducts" })
+	@Scheduled(fixedDelay = 30000)
+	public void cacheEvict() {
+		System.out.println("*******************************************************************************8888");
+	}
+	
+}

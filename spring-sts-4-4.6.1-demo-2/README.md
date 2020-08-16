@@ -1,0 +1,2 @@
+# Extract contents of spring-sts-4-4.6.1-demo-2-tools.7z and keep them in the same spring-sts-4-4.6.1-demo-2 workspace and run from there
+# Extract MongoDir.7z to D:\ such that you have a D:\MongoDir folder after extract, with D:\MongoDir\Data and D:\MongoDir\Log

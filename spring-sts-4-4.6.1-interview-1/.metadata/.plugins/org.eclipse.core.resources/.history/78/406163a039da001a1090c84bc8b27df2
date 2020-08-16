@@ -1,0 +1,14 @@
+package com.interview.pbasu.repositories;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.interview.pbasu.domains.Product;
+
+public interface ProductRepository extends CrudRepository<Product, Long> {
+
+	//Product findByProductSerial(String productSerial);
+	//List<Product> findByProductSKU(String productSKU);
+    //List<Product> findByTitleContaining(String productName);
+}

@@ -1,0 +1,21 @@
+package com.interview.pbasu.cache;
+
+
+@Configuration
+@EnableCaching(mode = AdviceMode.ASPECTJ)
+public class CacheConfiguration2 {
+    @Bean
+    public EhCacheManagerFactoryBean ehCacheManagerFactory() {
+        EhCacheManagerFactoryBean cacheManagerFactoryBean = new EhCacheManagerFactoryBean();
+        cacheManagerFactoryBean.setConfigLocation(new ClassPathResource("ehcache.xml"));
+        cacheManagerFactoryBean.setShared(true);
+        return cacheManagerFactoryBean;
+    }
+    @Bean
+    public EhCacheCacheManager ehCacheCacheManager() {
+        EhCacheCacheManager cacheManager = new EhCacheCacheManager();
+        cacheManager.setCacheManager(ehCacheManagerFactory().getObject());
+        cacheManager.setTransactionAware(true);
+        return cacheManager;
+    }
+}

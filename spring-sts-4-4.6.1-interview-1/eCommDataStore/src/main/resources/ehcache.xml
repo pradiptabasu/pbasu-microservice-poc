@@ -1,0 +1,42 @@
+<ehcache:config xmlns:ehcache="http://www.ehcache.org/v3"
+	xmlns:jcache="http://www.ehcache.org/v3/jsr107">
+
+	<ehcache:service>
+		<jcache:defaults enable-management="true"
+			enable-statistics="true" />
+	</ehcache:service>
+
+	<ehcache:cache alias="User" uses-template="DefaultCache">
+	</ehcache:cache>
+
+	<ehcache:cache-template name="DefaultCache">
+		<ehcache:expiry>
+			<ehcache:tti>3600</ehcache:tti>
+		</ehcache:expiry>
+		<ehcache:heap>200</ehcache:heap>
+	</ehcache:cache-template>
+
+</ehcache:config>
+
+
+<ehcache>
+    <diskStore path="java.io.tmpdir"/>
+    <cache name="company.byId"
+           maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="600"
+           timeToLiveSeconds="3600" overflowToDisk="true"/>
+    <cache name="company.byName"
+           maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="600"
+           timeToLiveSeconds="3600" overflowToDisk="true"/>
+</ehcache>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache>
+    <defaultCache eternal="true" maxElementsInMemory="100" overflowToDisk="false" />
+    <cache name="forecast" 
+           maxElementsInMemory="1000" 
+           timeToIdleSeconds="120"
+           timeToLiveSeconds="120"
+           overflowToDisk="false"
+           memoryStoreEvictionPolicy="LRU" />
+</ehcache>

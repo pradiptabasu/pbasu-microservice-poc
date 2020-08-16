@@ -741,3 +741,43 @@ https://github.com/MitocGroup/deep-microservices-helloworld
 * 
 * 
 * 
+
+
+# New in Spring 2.3
+* https://medium.com/@TimvanBaarsen/whats-new-in-spring-boot-2-3-22d01d036f11
+
+
+# Embedded MongoDB in Spring
+* https://springframework.guru/spring-boot-with-embedded-mongodb/
+* https://dzone.com/articles/spring-boot-with-embedded-mongodb
+* https://lankydan.dev/2017/05/29/embedded-documents-with-spring-data-and-mongodb
+* http://www.zakariaamine.com/2018-11-11/testing-spring-custom-mongo-port
+* https://www.baeldung.com/spring-boot-embedded-mongodb
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+# Spring Layered Jar
+* https://spring.io/blog/2020/01/27/creating-docker-images-with-spring-boot-2-3-0-m1
+* https://blog.tratif.com/2020/05/20/spring-tips-2-layered-jars-with-spring-boot-2-3-0/
+* https://www.youtube.com/watch?v=Cp417jDbTus
+* https://www.youtube.com/watch?v=3X0VBXw9nDM
+* https://blog.jdriven.com/2019/08/layered-spring-boot-docker-images/
+* https://medium.com/@TimvanBaarsen/whats-new-in-spring-boot-2-3-22d01d036f11
+* https://medium.com/faun/creating-a-docker-image-using-cloud-native-buildpacks-in-spring-boot-19ff81b5209d
+* https://medium.com/@TimvanBaarsen/whats-new-in-spring-boot-2-3-22d01d036f11
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 

@@ -1,0 +1,9 @@
+package com.interview.pbasu.seed;
+
+public class SeedDataLoader {
+
+	public SeedDataLoader() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

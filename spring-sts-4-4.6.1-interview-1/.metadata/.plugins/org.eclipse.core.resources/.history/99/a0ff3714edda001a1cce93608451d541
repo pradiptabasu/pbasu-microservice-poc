@@ -1,0 +1,14 @@
+package com.interview.pbasu.seed;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import com.interview.pbasu.repositories.ProductRepository;
+
+@Component
+public class SeedDataLoader {
+
+	@Autowired
+	ProductRepository productRepository;
+
+}

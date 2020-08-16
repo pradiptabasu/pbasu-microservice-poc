@@ -1,0 +1,222 @@
+package com.interview.pbasu.domain;
+
+import java.util.Date;
+import java.util.UUID;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import org.hibernate.annotations.ColumnDefault;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
+
+@Entity
+public class Product {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+
+//	@GeneratedValue(strategy = GenerationType.AUTO)
+//	@GeneratedValue(generator = "uuid")
+//	@GenericGenerator(name = "uuid", strategy = "uuid")
+//	@Column(name = "ID")
+//	@ColumnDefault("random_uuid()")
+//	@Type(type = "uuid-char")
+
+	// @Type(type="binary-uuid\")
+	@Type(type = "uuid-char") // without this line, Hibernate or H2 (probably other databases) stores UUID in BINARY format
+	@Column(nullable = false, updatable = false, unique = true)
+	private UUID productSerial;
+
+	@Column(nullable = false)
+	private String productSKU;
+
+	@Column(nullable = false)
+	// @Column(name = "productName")
+	private String productName;
+
+	@Column(nullable = false)
+	private String productType;
+
+	@Column(nullable = false)
+	private String productBrand;
+
+	@Column(nullable = false)
+	private float productPrice;
+
+	@Column(nullable = false)
+	private String productColor;
+
+	@Column(nullable = false)
+	private String productSize;
+
+	@Column(nullable = false)
+	private String productSeller;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date lastUpdated;
+	
+	@Column(nullable = false)
+	private Boolean lastUpdatedInCacheStatus;
+	
+	@Column(nullable = false)
+	private Boolean inventoryStatus;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getProductSKU() {
+		return productSKU;
+	}
+
+	public void setProductSKU(String productSKU) {
+		this.productSKU = productSKU;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public String getProductType() {
+		return productType;
+	}
+
+	public void setProductType(String productType) {
+		this.productType = productType;
+	}
+
+	public String getProductBrand() {
+		return productBrand;
+	}
+
+	public void setProductBrand(String productBrand) {
+		this.productBrand = productBrand;
+	}
+
+	public float getProductPrice() {
+		return productPrice;
+	}
+
+	public void setProductPrice(float productPrice) {
+		this.productPrice = productPrice;
+	}
+
+	public String getProductColor() {
+		return productColor;
+	}
+
+	public void setProductColor(String productColor) {
+		this.productColor = productColor;
+	}
+
+	public String getProductSize() {
+		return productSize;
+	}
+
+	public void setProductSize(String productSize) {
+		this.productSize = productSize;
+	}
+
+	public String getProductSeller() {
+		return productSeller;
+	}
+
+	public void setProductSeller(String productSeller) {
+		this.productSeller = productSeller;
+	}
+
+	public UUID getProductSerial() {
+		return productSerial;
+	}
+
+	public void setProductSerial(UUID productSerial) {
+		this.productSerial = productSerial;
+	}
+
+	public Date getLastUpdated() {
+		return lastUpdated;
+	}
+
+	public void setLastUpdated(Date lastUpdated) {
+		this.lastUpdated = lastUpdated;
+	}
+
+	public Boolean getInventoryStatus() {
+		return inventoryStatus;
+	}
+
+	public void setInventoryStatus(Boolean inventoryStatus) {
+		this.inventoryStatus = inventoryStatus;
+	}
+	
+	public Boolean getLastUpdatedInCacheStatus() {
+		return lastUpdatedInCacheStatus;
+	}
+
+	public void setLastUpdatedInCacheStatus(Boolean lastUpdatedInCacheStatus) {
+		this.lastUpdatedInCacheStatus = lastUpdatedInCacheStatus;
+	}
+
+	public Product() {
+	}
+
+	public Product(Long id, UUID productSerial, String productSKU, String productName, String productType,
+			String productBrand, float productPrice, String productColor, String productSize, String productSeller,
+			Date lastUpdated, Boolean lastUpdatedInCacheStatus, Boolean inventoryStatus) {
+		super();
+		this.id = id;
+		this.productSerial = productSerial;
+		this.productSKU = productSKU;
+		this.productName = productName;
+		this.productType = productType;
+		this.productBrand = productBrand;
+		this.productPrice = productPrice;
+		this.productColor = productColor;
+		this.productSize = productSize;
+		this.productSeller = productSeller;
+		this.lastUpdated = lastUpdated;
+		this.lastUpdatedInCacheStatus = lastUpdatedInCacheStatus;
+	}
+
+	public Product(UUID productSerial, String productSKU, String productName, String productType,
+			String productBrand, float productPrice, String productColor, String productSize, String productSeller,
+			Date lastUpdated, Boolean lastUpdatedInCacheStatus, Boolean inventoryStatus) {
+		super();
+		this.productSerial = productSerial;
+		this.productSKU = productSKU;
+		this.productName = productName;
+		this.productType = productType;
+		this.productBrand = productBrand;
+		this.productPrice = productPrice;
+		this.productColor = productColor;
+		this.productSize = productSize;
+		this.productSeller = productSeller;
+		this.lastUpdated = lastUpdated;
+		this.lastUpdatedInCacheStatus = lastUpdatedInCacheStatus;
+	}
+
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", productSerial=" + productSerial + ", productSKU=" + productSKU
+				+ ", productName=" + productName + ", productType=" + productType + ", productBrand=" + productBrand
+				+ ", productPrice=" + productPrice + ", productColor=" + productColor + ", productSize=" + productSize
+				+ ", productSeller=" + productSeller + ", lastUpdated=" + lastUpdated + ", lastUpdatedInCacheStatus="
+				+ lastUpdatedInCacheStatus + "]";
+	}
+
+}

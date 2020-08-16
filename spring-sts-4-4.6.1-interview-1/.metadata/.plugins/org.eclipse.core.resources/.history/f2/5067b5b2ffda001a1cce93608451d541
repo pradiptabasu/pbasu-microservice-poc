@@ -1,0 +1,5 @@
+package com.interview.pbasu.cache.customizer;
+
+public class CacheCustomizerForSimpleCache {
+
+}

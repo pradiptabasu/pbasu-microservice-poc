@@ -1,0 +1,10 @@
+package com.interview.pbasu.cache.customizer;
+
+@Component
+public class CacheCustomizerForSimpleCache  implements CacheManagerCustomizer<ConcurrentMapCacheManager> {
+ 
+    @Override
+    public void customize(ConcurrentMapCacheManager cacheManager) {
+        cacheManager.setCacheNames(asList("users", "transactions"));
+    }
+}

@@ -1,0 +1,95 @@
+package com.interview.pbasu.service;
+
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Service;
+import com.interview.pbasu.domain.Product;
+import com.interview.pbasu.repositories.ProductRepository;
+
+@Service
+public class ProductApiServiceImpl implements ProductApiService{
+    
+	@Autowired
+    private ProductRepository productRepository;
+	
+    @Override
+	public Product createProduct(Product product)
+	{
+		return productRepository.save(product);
+	}
+	
+    @Override
+    @Cacheable(value="products", key="productSerial")
+	public Product findByProductSerial(String productSerial)
+	{
+    	Product product = productRepository.findByProductSerial(productSerial);
+		return product;
+	}
+    
+    @Override
+    @Cacheable(value="products", key="#root.method")
+	public List<Product> findAllProducts()
+	{
+    	List<Product> products = (List<Product>) productRepository.findAll();
+		return products;
+	}
+	
+    @Override
+    @Cacheable(value="availableProducts", key="#root.method")
+	public List<Product> findAllAvailableProducts()
+	{
+    	List<Product> products = (List<Product>) productRepository.findAll();
+    	return products.stream().filter(p -> p.getInventoryStatus().equalsIgnoreCase("AVAILABLE")).collect(Collectors.toList());
+	}
+	
+    @Override
+    @Cacheable(value="productsBySKU", key="productSKU")
+	public List<Product> findByProductSKU(String productSKU)
+	{
+    	List<Product> products = (List<Product>) productRepository.findByProductSKU(productSKU);
+    	return products.stream().filter(p -> p.getInventoryStatus().equalsIgnoreCase("AVAILABLE")).collect(Collectors.toList());
+	}
+	
+    @Override
+	public List<Product> findByProductNameContaining(String productName)
+	{
+    	List<Product> products = (List<Product>) productRepository.findByProductNameContaining(productName);
+    	return products.stream().filter(p -> p.getInventoryStatus().equalsIgnoreCase("AVAILABLE")).collect(Collectors.toList());
+	}
+	
+    @Override
+	public List<Product> findByProductBrand(String productBrand)
+	{
+    	List<Product> products = (List<Product>) productRepository.findByProductBrand(productBrand);
+    	return products.stream().filter(p -> p.getInventoryStatus().equalsIgnoreCase("AVAILABLE")).collect(Collectors.toList());
+	}
+	
+    @Override
+	public List<Product> findByProductColor(String productColor)
+	{
+    	List<Product> products = (List<Product>) productRepository.findByProductColor(productColor);
+    	return products.stream().filter(p -> p.getInventoryStatus().equalsIgnoreCase("AVAILABLE")).collect(Collectors.toList());
+	}
+	
+    @Override
+	public List<Product> findByProductSize(String productSize)
+	{
+    	List<Product> products = (List<Product>) productRepository.findByProductSize(productSize);
+    	return products.stream().filter(p -> p.getInventoryStatus().equalsIgnoreCase("AVAILABLE")).collect(Collectors.toList());
+	}
+	
+    @Override
+	public long countByproductSKU(String productSKU)
+	{
+    	return productRepository.countByproductSKU(productSKU);
+	}
+	
+    @Override
+	public long countByProductSeller(String productSeller)
+	{
+    	return productRepository.countByProductSeller(productSeller);
+	}
+}

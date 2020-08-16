@@ -1,0 +1,20 @@
+package com.interview.pbasu.cache;
+
+
+@Configuration
+@Dev
+public class CacheMonitoringForEhCache {
+	 @Autowired
+	    private EhCacheCacheManager ehCacheCacheManager;
+	    @Bean
+	    public MBeanServer mBeanServer() {
+	        MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
+	        return mBeanServer;
+	    }
+	    @Bean
+	    public ManagementService managementService() {
+	        ManagementService managementService = new ManagementService(ehCacheCacheManager.getCacheManager(), mBeanServer(), true, true, true, true);
+	        managementService.init();
+	        return managementService;
+	    }
+}

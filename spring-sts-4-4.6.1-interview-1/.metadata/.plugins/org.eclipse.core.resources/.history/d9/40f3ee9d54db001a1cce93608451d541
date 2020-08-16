@@ -1,0 +1,176 @@
+package com.interview.pbasu.controller;
+
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
+import java.util.concurrent.Callable;
+import java.util.stream.Collectors;
+
+import org.modelmapper.ModelMapper;
+import org.modelmapper.PropertyMap;
+import org.modelmapper.convention.MatchingStrategies;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.expression.ParseException;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.interview.pbasu.domain.Product;
+import com.interview.pbasu.service.ProductApiService;
+import com.interview.pbasu.service.model.dto.APIResponse;
+import com.interview.pbasu.service.model.dto.ProductDto;
+
+@RestController
+@RequestMapping("/product")
+public class ProductApiController {
+
+	@Autowired
+	private ProductApiService productService;
+
+	@Autowired
+	ObjectMapper objectMapper;
+
+	//@Autowired
+	ModelMapper modelMapper = new ModelMapper();
+
+//	@Autowired
+//	public ProductApiController(ModelMapper modelMapper) {
+//		this.modelMapper = modelMapper;
+//		this.modelMapper.addMappings(skipModifiedFieldsMap);
+//	}
+//
+//	PropertyMap<ProductDto, Product> skipModifiedFieldsMap = new PropertyMap<ProductDto, Product>() {
+//		Calendar cal = Calendar.getInstance();
+//		protected void configure() {
+//			skip().setId(null);
+//			skip().set
+//		}
+//	};
+
+//    @GetMapping(value = "/findProduct/{userId}")
+//    public ResponseEntity getUser(@PathVariable("userId") String userId){
+//        Product product = productService.getProduct(userId);
+//        return new ResponseEntity<>(product, HttpStatus.OK);
+//    }
+
+//update and delete products    
+//exception handling
+//    @ExceptionHandler({UserNotFoundException.class})
+//    public ResponseEntity<ErrorResponse> notFound(UserNotFoundException ex){
+//
+//        return new ResponseEntity<ErrorResponse>(
+//            new ErrorResponse(ex.getMessage(), 404, "The user was not found") , HttpStatus.NOT_FOUND);
+//    }
+
+	@PostMapping("/addProduct")
+	public ProductDto createProduct(ProductDto productDto) {
+		return convertToProductDTO(productService.createProduct(convertToProduct(productDto)));
+	}
+
+	@GetMapping("/listProduct")
+	public Product findByProductSerial(@RequestParam("productSerial") String productSerial) {
+		return productService.findByProductSerial(productSerial);
+	}
+
+	@GetMapping("/listProducts/all")
+	public List<Product> findAllProducts() {
+		return productService.findAllProducts();
+	}
+
+	@GetMapping("/listProducts")
+	public List<ProductDto> findAllAvailableProducts() {
+		return productService.findAllAvailableProducts().stream().map(this::convertToProductDTO).collect(Collectors.toList());
+	}
+
+	@GetMapping(value = "/listProducts", params = { "productSKU" })
+	public APIResponse findByProductSKU(@RequestParam("productSKU") String productSKU) {
+		return new APIResponse("OK", "Products loaded successfully", productService.findByProductSKU(productSKU));
+	}
+
+	@GetMapping(value = "/listProducts", params = { "productName" })
+	public Callable<APIResponse> findByProductNameContaining(@RequestParam("productName") String productName) {
+		return new Callable<APIResponse>() {
+			@Override
+			public APIResponse call() throws Exception {
+				try {
+					return new APIResponse("OK", "Products loaded successfully",
+							productService.findByProductNameContaining(productName));
+				} catch (Exception ex) {
+					return new APIResponse("ERROR", ex.getMessage(), null);
+				}
+			}
+		};
+	}
+
+	@GetMapping(value = "/listProducts", params = { "productBrand" })
+	public ResponseEntity<List<Product>> findByProductBrand(@RequestParam("productBrand") String productBrand) {
+		return ResponseEntity.ok().body(productService.findByProductBrand(productBrand));
+	}
+
+	@GetMapping(value = "/listProducts", params = { "productColor" })
+	public ResponseEntity<List<Product>> findByProductColor(@RequestParam("productColor") String productColor) {
+		return new ResponseEntity<List<Product>>(productService.findByProductColor(productColor), HttpStatus.FOUND);
+	}
+
+	@GetMapping(value = "/listProducts", params = { "productSize" })
+	public List<Product> findByProductSize(@RequestParam("productSize") String productSize) {
+		return productService.findByProductSize(productSize);
+	}
+
+	@GetMapping(value = "/countProducts", params = { "productSKU" })
+	public long countByproductSKU(@RequestParam("productSKU") String productSKU) {
+		return productService.countByproductSKU(productSKU);
+	}
+
+	@GetMapping(value = "/countProducts", params = { "productSeller" })
+	public long countByProductSeller(@RequestParam("productSeller") String productSeller) {
+		return productService.countByProductSeller(productSeller);
+	}
+
+
+	private Product convertToProduct(ProductDto productDto) throws ParseException {
+		Calendar cal = Calendar.getInstance();
+		//modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);
+		Product product = modelMapper.map(productDto, Product.class);
+		product.setLastUpdated(cal.getTime());
+		product.setInventoryStatus("available");
+		product.setLastUpdatedInCacheStatus(false);
+		product.setProductSerial(UUID.randomUUID());
+		System.out.println("****************************");
+		System.out.println(product);
+		return product;
+	}
+
+//	private Product convertToProduct(ProductDto productDto) throws ParseException {
+//		Product product = modelMapper.map(productDto, Post.class);
+//		product.setSubmissionDate(
+//				productDto.getSubmissionDateConverted(userService.getCurrentUser().getPreference().getTimezone()));
+//
+//		if (productDto.getId() != null) {
+//			Product oldProduct = postService.getPostById(productDto.getId());
+//			product.setRedditID(oldProduct.getRedditID());
+//			product.setSent(oldProduct.isSent());
+//		}
+//		return product;
+//	}
+
+	private ProductDto convertToProductDTO(Product product) {
+		modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.LOOSE);
+		ProductDto productDto = modelMapper.map(product, ProductDto.class);
+		return productDto;
+	}
+	
+//	private ProductDto convertToProductDto(Product product) {
+//		ProductDto productDto = modelMapper.map(product, ProductDto.class);
+//		productDto.setProductSeller(""); //this line will empty the productSeller field as empty
+//		return productDto;
+//	}
+
+}

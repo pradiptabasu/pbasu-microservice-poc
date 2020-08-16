@@ -1,0 +1,48 @@
+#http://www.h2database.com/html/features.html#connection_modes
+#https://www.baeldung.com/persistence-with-spring-series
+#https://www.baeldung.com/spring-boot-h2-database
+
+#https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+#https://lishman.io/spring-data-jpa-repository-queries
+#findAllByEntityNotNullAndDateBetween(Date begin, Date end);
+#List<Noticia> findByPublishdateGreaterThanOrderByPublishdateDesc(Long publishdate)
+#https://www.logicbig.com/tutorials/spring-framework/spring-data/derived-count-query.html
+#
+#
+#
+#
+
+#CRUDRepository
+#JpaRepository
+#JdbcTemplate
+#Load seed data using CommandLineRunner or run()
+#Create database, Load seed data, and drop data & database using SQL files
+
+spring.datasource.url=jdbc:h2:mem:jpadb
+#spring.datasource.url = jdbc:h2:file:D:/testH2db
+#spring.datasource.url=jdbc:h2:file:/data/demo
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+
+spring.jpa.show-sql=true
+#spring.jpa.hibernate.ddl-auto=none
+#spring.jpa.hibernate.ddl-auto=create
+
+#spring.jpa.properties.hibernate.jdbc.time_zone= UTC
+
+#spring.datasource.driver-class-name=org.h2.Driver
+#spring.datasource.platform=h2
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+
+# Whether to enable trace output.
+#spring.h2.console.settings.trace=false
+ 
+# Whether to enable remote access.
+#spring.h2.console.settings.web-allow-others=false
+
+# Custom H2 Console URL
+#spring.h2.console.path=/h2
+#spring.h2.console.path=/h2-console

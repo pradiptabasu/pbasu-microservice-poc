@@ -1,0 +1,210 @@
+{
+	"info": {
+		"_postman_id": "2cb45182-ac76-4805-84ee-d405cecfb97d",
+		"name": "Demo - Interview - eCommerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List All Available Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProducts/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProducts",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Products by SKU",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProducts?productSKU=ADREDSHTM123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProducts"
+					],
+					"query": [
+						{
+							"key": "productSKU",
+							"value": "ADREDSHTM123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Products by Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProducts?productName=Red Checked Shirt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProducts"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "Red Checked Shirt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Products by Brand",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProducts?productBrand=Adidas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProducts"
+					],
+					"query": [
+						{
+							"key": "productBrand",
+							"value": "Adidas"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List All Products by Color",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProducts?productColor=RED",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProducts"
+					],
+					"query": [
+						{
+							"key": "productColor",
+							"value": "RED"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productSKU\": \"ADREDSHTM123\",\r\n    \"productName\": \"Red Checked Shirt\",\r\n    \"productType\": \"Shirt\",\r\n    \"productBrand\": \"Adidas\",\r\n    \"productPrice\": 23.49,\r\n    \"productColor\": \"RED\",\r\n    \"productSize\": \"L\",\r\n    \"productSeller\": \"BizTraders\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/addProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Product by Serial Number",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/listProduct?productSerial=b59f552e-e056-4aeb-97b2-92cfa510ffec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"listProduct"
+					],
+					"query": [
+						{
+							"key": "productSerial",
+							"value": "b59f552e-e056-4aeb-97b2-92cfa510ffec"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

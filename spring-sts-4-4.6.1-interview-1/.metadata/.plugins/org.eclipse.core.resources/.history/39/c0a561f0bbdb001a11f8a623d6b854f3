@@ -1,0 +1,108 @@
+package com.interview.pbasu.test.controller;
+
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+import java.util.UUID;
+
+import org.assertj.core.util.Arrays;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mockito;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.MvcResult;
+import org.springframework.test.web.servlet.RequestBuilder;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+
+import com.interview.pbasu.controller.ProductApiController;
+import com.interview.pbasu.domain.Product;
+import com.interview.pbasu.service.ProductApiService;
+
+@RunWith(SpringRunner.class)
+@WebMvcTest(value = ProductApiController.class)
+public class ProductApiControllerTest {
+
+	@Autowired
+    private MockMvc mvc;
+ 
+    @MockBean
+    private ProductApiService productService;
+    
+    Calendar cal = Calendar.getInstance();
+    private List<Product> mockProductList = new ArrayList<>();
+    Product mockProduct = new Product(UUID.randomUUID(), "MOCKADREDSHTM123", "MOCKRed Checked Shirt", "MOCKShirt", "MOCKAdidas", 23.49f, "RED", "L", "MOCKBizTraders", cal.getTime(), false, "available");
+
+	String exampleCourseJson = "{\"name\":\"Spring\",\"description\":\"10Steps\",\"steps\":[\"Learn Maven\",\"Import Project\",\"First Example\",\"Second Example\"]}";
+	
+	@Test
+	public void checkReturnType()
+	  throws Exception {
+	    
+		Product product = new Product(UUID.randomUUID(), "MOCKADREDSHTM123", "MOCKRed Checked Shirt", "MOCKShirt", "MOCKAdidas", 23.49f, "RED", "L", "MOCKBizTraders", cal.getTime(), false, "available");
+	 
+	    List<Employee> allEmployees = Arrays.asList(alex);
+	 
+	    given(service.getAllEmployees()).willReturn(allEmployees);
+	 
+	    mvc.perform(get("/api/employees")
+	      .contentType(MediaType.APPLICATION_JSON))
+	      .andExpect(status().isOk())
+	      .andExpect(jsonPath("$", hasSize(1)))
+	      .andExpect(jsonPath("$[0].name", is(alex.getName())));
+	}
+	
+	@Test
+	public void retrieveAllAvailableProducts() throws Exception {
+		mockProductList.add(new Product(UUID.randomUUID(), "MOCKADREDSHTM123", "MOCKRed Checked Shirt", "MOCKShirt", "MOCKAdidas", 23.49f, "RED", "L", "BizTraders", cal.getTime(), false, "available"))
+	    mockProductList.add(new Product(UUID.randomUUID(), "MOCKADREDSHTM123", "MOCKRed Checked Shirt", "MOCKShirt", "MOCKAdidas", 23.49f, "RED", "L", "BizTraders", cal.getTime(), true, "sold"));
+	    mockProductList.add(new Product(UUID.randomUUID(), "MOCKADREDSHTM123", "MOCKRed Checked Shirt", "MOCKShirt", "MOCKAdidas", 23.49f, "RED", "L", "BizTraders", cal.getTime(), false, "available"));
+	    mockProductList.add(new Product(UUID.randomUUID(), "MOCKADREDSHTM123", "MOCKRed Checked Shirt", "MOCKShirt", "MOCKAdidas", 23.49f, "RED", "L", "BizTraders", cal.getTime(), false, "available"));
+	    mockProductList.add(new Product(UUID.randomUUID(), "MOCKADREDSHTM456", "MOCKRed Checked Shirt", "MOCKShirt", "MOCKAdidas", 23.49f, "RED", "L", "BizTraders", cal.getTime(), false, "available"));
+	    
+		Mockito.when(productService.findAllAvailableProducts()).thenReturn(mockProductList);
+
+		RequestBuilder requestBuilder = MockMvcRequestBuilders.get("/product/listProducts").accept(MediaType.APPLICATION_JSON);
+
+		MvcResult result = mvc.perform(requestBuilder).andReturn();
+
+		System.out.println(result.getResponse());
+
+		//String expected = "{id:Course1,name:Spring,description:10Steps}";
+		// {"id":"Course1","name":"Spring","description":"10 Steps, 25 Examples and 10K Students","steps":["Learn Maven","Import Project","First Example","Second Example"]}
+
+		JSONAssert.assertEquals(expected, result.getResponse().getContentAsString(), false);
+	}
+
+	@Test
+	public void createStudentCourse() throws Exception {
+		Course mockCourse = new Course("1", "Smallest Number", "1",
+				Arrays.asList("1", "2", "3", "4"));
+
+		// studentService.addCourse to respond back with mockCourse
+		Mockito.when(
+				studentService.addCourse(Mockito.anyString(),
+						Mockito.any(Course.class))).thenReturn(mockCourse);
+
+		// Send course as body to /students/Student1/courses
+		RequestBuilder requestBuilder = MockMvcRequestBuilders
+				.post("/students/Student1/courses")
+				.accept(MediaType.APPLICATION_JSON).content(exampleCourseJson)
+				.contentType(MediaType.APPLICATION_JSON);
+
+		MvcResult result = mockMvc.perform(requestBuilder).andReturn();
+
+		MockHttpServletResponse response = result.getResponse();
+
+		assertEquals(HttpStatus.CREATED.value(), response.getStatus());
+
+		assertEquals("http://localhost/students/Student1/courses/1",
+				response.getHeader(HttpHeaders.LOCATION));
+
+	}
+	
+}

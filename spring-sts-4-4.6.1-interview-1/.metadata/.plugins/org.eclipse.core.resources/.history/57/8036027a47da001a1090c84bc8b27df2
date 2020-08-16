@@ -1,0 +1,25 @@
+package com.interview.pbasu.repositories;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.interview.pbasu.domains.Product;
+
+public interface ProductRepository extends CrudRepository<Product, Long> {
+
+	Product findByProductSerial(String productSerial);
+	List<Product> findByProductSKU(String productSKU);
+    List<Product> findByProductNameContaining(String productName);
+    List<Product> findBylastUpdatedBefore(Date lastUpdated);
+    //List<Product> findByLastUpdatedInCacheStatusOrderBylastUpdated(Boolean lastUpdatedInCacheStatus);
+    List<Product> findByLastUpdatedInCacheStatus(Boolean lastUpdatedInCacheStatus);
+    
+//    @Query("SELECT o FROM PRODUCT o WHERE o.lastUpdated BETWEEN :from AND :to AND o.status = :status AND o.terminal.deviceId = :deviceId AND o.trainingMode = :trainingMode")
+//    List<Product> findOperations(@Param("from") Date startDay,
+//                                                   @Param("to") Date endDay,
+//                                                   @Param("status") OperationStatus status,
+//                                                   @Param("deviceId") String deviceId,
+//                                                   @Param("trainingMode") boolean trainingMode);
+}

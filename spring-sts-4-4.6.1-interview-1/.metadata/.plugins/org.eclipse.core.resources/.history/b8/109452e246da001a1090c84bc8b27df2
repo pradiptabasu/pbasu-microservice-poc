@@ -1,0 +1,129 @@
+package com.interview.pbasu;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Scanner;
+import java.util.UUID;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import com.interview.pbasu.domains.Product;
+import com.interview.pbasu.repositories.ProductRepository;
+
+@SpringBootApplication
+public class ECommDataStore2Application {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ECommDataStore2Application.class, args);
+	}
+
+	@Bean
+	public CommandLineRunner productDemo(ProductRepository productRepository) {
+		return (args) -> {
+
+		    Calendar cal = Calendar.getInstance();
+		    Date date=cal.getTime();
+		    DateFormat dateFormat = new SimpleDateFormat("HH:mm:ss");
+		    
+			System.out.println();
+
+			// create products
+			Product newProduct = new Product(UUID.randomUUID(),"ADREDSHTM123", "Red Checked Shirt", "Shirt", "Adidas", "23.49", "RED", "L", "BizTraders", cal.getTime(), false);
+			newProduct = productRepository.save(newProduct);
+			System.out.println("ID for Book is " + newProduct.getId() + "  Serial for Product is " + newProduct.getProductSerial());
+			System.out.println();
+			
+			newProduct = new Product(UUID.randomUUID(), "ADREDSHTM123", "Red Checked Shirt", "Shirt", "Adidas", "23.49", "RED", "L", "BizTraders", cal.getTime(), false);
+			newProduct = productRepository.save(newProduct);
+			System.out.println("ID for Book is " + newProduct.getId() + "  Serial for Product is " + newProduct.getProductSerial());
+			System.out.println();
+			
+			newProduct = new Product(UUID.randomUUID(), "ADREDSHTM123", "Red Checked Shirt", "Shirt", "Adidas", "23.49", "RED", "L", "BizTraders", cal.getTime(), false);
+			newProduct = productRepository.save(newProduct);
+			System.out.println("ID for Book is " + newProduct.getId() + "  Serial for Product is " + newProduct.getProductSerial());
+			System.out.println();
+
+//	        System.out.println("Enter word!");
+//	        Scanner scanner = new Scanner(System.in);
+//	        String line = scanner.nextLine();
+//	        System.out.println(line);
+	        
+			// fetch all products
+			System.out.println("products found with findAll():");
+			System.out.println("---------------------------");
+			for (Product productTemp : productRepository.findAll()) {
+				System.out.println(productTemp.toString());
+			}
+			System.out.println();
+
+//			// fetch product by id
+//			Product product = productRepository.findById(1L).get();
+//			System.out.println("product found with findById(1L):");
+//			System.out.println("-----------------------------");
+//			System.out.println(product.toString());
+//			System.out.println();
+
+//			// fetch product by ISBN
+//			Product productWithIBSN = productRepository.findByProductSerial("123");
+//			System.out.println("product found with findByProductSerial('123'):");
+//			System.out.println("------------------------------------------");
+//			System.out.println(productWithIBSN.toString());
+//			System.out.println();
+
+//			// fetch all products that contain keyword `java`
+//			System.out.println("products with findByProductSKU 'ADREDSHTM123' : ");
+//			System.out.println("----------------------------------");
+//			for (Product productTemp : productRepository.findByProductSKU("ADREDSHTM123")) {
+//				System.out.println(productTemp.toString());
+//			}
+//			System.out.println();
+
+//			// fetch all products that contain keyword `java`
+//			System.out.println("products with name that contain keyword 'Checked':");
+//			System.out.println("----------------------------------");
+//			for (Product productTemp : productRepository.findByProductNameContaining("Checked")) {
+//				System.out.println(productTemp.toString());
+//			}
+//			System.out.println();
+			
+			// fetch all products that contain keyword `java`
+			System.out.println("products with name that contain keyword 'Checked':");
+			System.out.println("----------------------------------");
+			for (Product productTemp : productRepository.findBylastUpdatedBefore("Checked")) {
+				System.out.println(productTemp.toString());
+			}
+			System.out.println();
+			
+			// fetch all products that contain keyword `java`
+			System.out.println("products with name that contain keyword 'Checked':");
+			System.out.println("----------------------------------");
+			for (Product productTemp : productRepository.findByLastUpdatedInCacheStatusOrderBylastUpdated("Checked")) {
+				System.out.println(productTemp.toString());
+			}
+			System.out.println();
+	
+//			// update product title
+//			Product productUpdate = productRepository.findById(1L).get();
+//			productUpdate.setProductName("Java Gently 2nd Edition");
+//			productRepository.save(productUpdate);
+//			System.out.println("Update product title:");
+//			System.out.println("------------------");
+//			System.out.println(productUpdate.toString());
+//			System.out.println();
+
+			// total products in DB
+			System.out.println("Total products in DB:");
+			System.out.println("------------------");
+			System.out.println(productRepository.count());
+			System.out.println();
+
+//			// delete all products
+//			productRepository.deleteAll();
+		};
+	}
+}

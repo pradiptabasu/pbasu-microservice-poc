@@ -1,0 +1,42 @@
+spring.datasource.url=jdbc:h2:mem:jpadb
+#spring.datasource.url = jdbc:h2:file:D:/testH2db
+#spring.datasource.url=jdbc:h2:file:/data/demo
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+
+spring.jpa.show-sql=true
+logging.level.org.hibernate.SQL=debug
+
+
+cache.jcache.config.classpath=ehcache.xml
+spring.cache.cache-names=cache1,cache2
+spring.cache.ehcache.config=classpath:config/another-config.xml
+spring.cache.jcache.config=classpath:ehcache.xml
+
+    
+#spring.jpa.hibernate.ddl-auto=none
+#spring.jpa.hibernate.ddl-auto=create
+
+#spring.jpa.properties.hibernate.jdbc.time_zone= UTC
+
+#spring.datasource.driver-class-name=org.h2.Driver
+#spring.datasource.platform=h2
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.H2Dialect
+
+# Whether to enable trace output.
+#spring.h2.console.settings.trace=false
+ 
+# Whether to enable remote access.
+#spring.h2.console.settings.web-allow-others=false
+
+# Custom H2 Console URL
+#spring.h2.console.path=/h2
+#spring.h2.console.path=/h2-console
+
+
+
+# Entry expiration. By default, the entries never expire.
+#spring.cache.redis.time-to-live=10000ms

@@ -1,0 +1,73 @@
+package com.interview.pbasu.cache;
+
+import java.util.concurrent.TimeUnit;
+
+import org.springframework.cache.Cache;
+import org.springframework.cache.CacheManager;
+import org.springframework.cache.annotation.CachingConfigurer;
+import org.springframework.cache.concurrent.ConcurrentMapCache;
+import org.springframework.cache.concurrent.ConcurrentMapCacheManager;
+import org.springframework.cache.interceptor.CacheErrorHandler;
+import org.springframework.cache.interceptor.CacheResolver;
+import org.springframework.cache.interceptor.KeyGenerator;
+
+public class CacheConfigurationForGuava implements CachingConfigurer {
+
+	public CacheConfigurationForGuava() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public CacheManager cacheManager() {
+		// TODO Auto-generated method stub
+//		ConcurrentMapCacheManager cacheManager = new ConcurrentMapCacheManager() {
+//
+//			@Override
+//			protected Cache createConcurrentMapCache(final String name) {
+//				return new ConcurrentMapCache(name, CacheBuilder.newBuilder().expireAfterWrite(30, TimeUnit.MINUTES)
+//						.maximumSize(100).build().asMap(), false);
+//			}
+//		};
+//
+//		return cacheManager;
+		return null;
+		
+	}
+
+	@Override
+	public CacheResolver cacheResolver() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public KeyGenerator keyGenerator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public CacheErrorHandler errorHandler() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+//	@Override
+//	public CacheResolver cacheResolver() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+
+//	@Override
+//	public KeyGenerator keyGenerator() {
+//		// TODO Auto-generated method stub
+//		return new DefaultKeyGenerator();
+//	}
+
+//	@Override
+//	public CacheErrorHandler errorHandler() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
+
+}

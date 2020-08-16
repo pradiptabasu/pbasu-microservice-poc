@@ -1,0 +1,416 @@
+# http://www.h2database.com/html/features.html#connection_modes
+# https://www.baeldung.com/persistence-with-spring-series
+# https://www.baeldung.com/spring-boot-h2-database
+
+# https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+# https://lishman.io/spring-data-jpa-repository-queries
+# findAllByEntityNotNullAndDateBetween(Date begin, Date end);
+# List<Noticia> findByPublishdateGreaterThanOrderByPublishdateDesc(Long publishdate)
+# https://www.logicbig.com/tutorials/spring-framework/spring-data/derived-count-query.html
+# 
+# 
+# 
+# 
+
+
+# CRUD Reposiroty & Caching
+# https://medium.com/@buddhiprabhath/spring-boot-crud-example-with-caching-c2c9b7fd8f05
+# https://javadeveloperzone.com/spring-boot/spring-boot-database-cache-example/
+# Cacheable value key condition (before method execution) unless (after method execution)  https://www.youtube.com/watch?v=6uWU3gDhZk4&t=4s
+# Spring Default Cache expiry setup - 
+# Spring EhCache + H2 + Load Data https://www.youtube.com/watch?v=cWqNeANzEz0
+# https://www.youtube.com/watch?v=TiEpi92Whtg&t=9s
+# 
+# 
+# 
+# 
+# spring simple cache manager expiration
+# 
+# 
+# https://www.youtube.com/watch?v=ccfQ1j4suN0&t=8s
+# https://github.com/discospiff/SpringBootMicroServices
+# 
+# 
+# 
+# 
+# 
+# Memcache with Spring Boot
+# https://devcenter.heroku.com/articles/spring-boot-memcache
+# 
+# 
+# 
+# https://www.baeldung.com/spring-scheduled-tasks
+# fixed rate and fixed delay in schedule spring?
+# 
+# 
+# 
+# 
+
+
+
+
+# 
+# https://medium.com/@buddhiprabhath/spring-boot-crud-example-with-caching-c2c9b7fd8f05
+# 
+# 
+# https://dzone.com/articles/jpa-caching-with-hazelcast-hibernate-and-spring-bo
+# https://piotrminkowski.com/2017/05/10/in-memory-data-grid-with-hazelcast/
+# https://egkatzioura.com/2017/02/12/hibernate-caching-with-hazelcast-basics/
+# https://egkatzioura.com/2017/02/12/hibernate-caching-with-hazelcast-get-started/
+# https://egkatzioura.com/2017/01/11/spring-boot-and-cache-abstraction-with-hazelcast/
+# https://egkatzioura.com/2017/02/12/hibernate-caching-with-hazelcast-get-started/
+# https://egkatzioura.com/
+# https://dzone.com/articles/caching-with-spring-boot-and-hazelcast?fromrel=true
+# 
+# 
+# https://dzone.com/articles/spring-hibernate-ehcache-caching?fromrel=true
+# 
+# https://dzone.com/articles/safeguard-spring-app-from-cache-failure?fromrel=true
+# 
+# 
+# 
+
+
+
+
+#CRUDRepository
+#JpaRepository
+#JdbcTemplate
+#Load seed data using CommandLineRunner or run()
+#Create database, Load seed data, and drop data & database using SQL files
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+
+
+
+
+
+
+
+
+
+
+https://reflectoring.io/spring-boot-cache/
+https://reflectoring.io/spring-boot-cache/
+https://reflectoring.io/spring-boot-hazelcast/#hazelcast-as-a-distributed-cache
+https://www.javatpoint.com/spring-boot-caching
+https://medium.com/@alexanderang.24/spring-boot-cache-implementation-for-database-operations-cf846d6d8e3c
+https://docs.spring.io/spring-boot/docs/current/reference/html/spring-boot-features.html#boot-features-caching-provider-simple
+https://www.baeldung.com/spring-cache-tutorial
+https://github.com/eugenp/tutorials/tree/master/spring-caching
+Expire simple cache
+https://stackoverflow.com/questions/55482051/spring-boot-native-cache-how-to-expire-remove-cache-data-by-individual-keys-el
+https://stackoverflow.com/questions/44202700/spring-cacheable-default-ttl
+https://self-learning-java-tutorial.blogspot.com/2019/09/spring-cache-set-expiry-time-to-cache.html
+http://dolszewski.com/spring/multiple-ttl-caches-in-spring-boot/
+https://www.foreach.be/blog/spring-cache-annotations-some-tips-tricks
+
+
+EhCache
+https://www.baeldung.com/spring-boot-ehcache
+https://myshittycode.com/2017/04/11/spring-ehcache-xml-less-spring-configuration-for-ehcache-2-x-vs-ehcache-3-x/
+https://springframework.guru/using-ehcache-3-in-spring-boot/
+https://dimitr.im/spring-boot-cache-ehcache
+https://www.toptal.com/spring/caching-in-spring-with-ehcache-annotations
+https://www.codota.com/code/java/methods/org.springframework.cache.ehcache.EhCacheManagerFactoryBean/%3Cinit%3E
+https://www.programcreek.com/java-api-examples/?class=org.springframework.cache.ehcache.EhCacheManagerFactoryBean&method=setConfigLocation
+https://www.javatips.net/api/org.springframework.cache.ehcache.ehcachemanagerfactorybean
+https://adamzareba.github.io/Spring-Hibernate-EhCache-Caching/
+https://dzone.com/articles/spring-hibernate-with-ehcache
+https://www.ehcache.org/
+https://stackoverflow.com/questions/44341553/cannot-access-net-sf-ehcache-cachemanager-class-file-for-net-sf-ehcache-cachema
+https://taidevcouk.wordpress.com/2013/07/04/you-fancy-a-bit-of-ehcaching-in-spring-but-cant-find-class-ehcachemanagerfactorybean/
+https://blog.aspiresys.pl/technology/quick-start-with-ehcache-annotations-for-spring/
+https://mkyong.com/spring/spring-caching-and-ehcache-example/
+https://www.thetopsites.net/article/52908363.shtml
+https://mkyong.com/spring/spring-caching-and-ehcache-example/
+https://examples.javacodegeeks.com/setting-up-ehcache-without-the-xml-hassle/
+https://github.com/PiyushChaudhari/spring-boot-ehcache-without-xml/wiki
+https://myshittycode.com/2017/04/11/spring-ehcache-xml-less-spring-configuration-for-ehcache-2-x-vs-ehcache-3-x/
+https://www.ehcache.org/documentation/3.0/xml.html
+https://www.codepedia.org/ama/spring-caching-with-ehcache/
+https://memorynotfound.com/spring-caching-example-java-xml-configuration/
+https://www.baeldung.com/ehcache
+
+
+
+
+
+
+
+Spring Boot supports several cache providers. If Spring Boot finds a cache provider on the classpath, it tries to find a default configuration for this provider. If it doesn’t find a provider, it configures the Simple provider, which is just a ConcurrentHashMap.
+Generic caching is used if the context defines at least one org.springframework.cache.Cache bean. A CacheManager wrapping all beans of that type is created.
+Simple Cache Provider
+
+
+
+
+
+
+
+
+# https://stackoverflow.com/questions/37281139/spring-cache-logging-on-cacheable-hit
+# https://docs.spring.io/spring-boot/docs/2.1.12.RELEASE/reference/html/production-ready-metrics.html 
+# https://www.javatpoint.com/spring-boot-cache-provider
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+
+
+
+
+
+# java spring service controller DAO DTO
+# https://www.youtube.com/watch?v=ccfQ1j4suN0&t=8s
+# https://www.baeldung.com/entity-to-and-from-dto-for-a-java-spring-application
+# https://stackoverflow.com/questions/35078383/what-are-the-dao-dto-and-service-layers-in-spring-framework
+# https://www.baeldung.com/jsf-spring-boot-controller-service-dao
+# https://auth0.com/blog/automatically-mapping-dto-to-entity-on-spring-boot-apis/
+# https://medium.com/javarevisited/rest-api-using-spring-boot-part-1-setting-up-and-creating-basic-controller-9699330df64f
+# https://medium.com/javarevisited/rest-api-using-spring-boot-part-2-adding-model-service-controller-and-dao-implementation-697284b4ff38
+# https://medium.com/stackavenue/why-to-use-service-layer-in-spring-mvc-5f4fc52643c0
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+
+
+
+
+# An alternative, which would address your concern in the comments above about having to create query methods for every combination of parameters, is to use the Specification pattern via either the Criteria API or by using QueryDSL.
+# https://medium.com/@milan.brankovic/spring-advanced-search-filtering-5ee850f9458c
+# https://stackoverflow.com/questions/42808275/spring-boot-crudrepository-filter
+# https://spring.io/blog/2011/04/26/advanced-spring-data-jpa-specifications-and-querydsl/
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# https://www.baeldung.com/java-stream-filter-lambda
+# https://www.geeksforgeeks.org/stream-filter-java-examples/
+# https://mkyong.com/java8/java-8-streams-filter-examples/
+# https://beginnersbook.com/2017/10/java-8-stream-filter/
+# https://www.javatpoint.com/java-8-stream-filter
+# https://howtodoinjava.com/java8/java-stream-filter-example/
+# https://stackify.com/streams-guide-java-8/
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# https://www.baeldung.com/spring-response-entity
+# https://stackoverflow.com/questions/26549379/when-use-responseentityt-and-restcontroller-for-spring-restful-applications
+# https://howtodoinjava.com/spring-boot2/rest/rest-api-example/
+# http://zetcode.com/springboot/responseentity/
+# https://www.programcreek.com/java-api-examples/?api=org.springframework.http.ResponseEntity
+# https://www.javaguides.net/2019/08/spring-responseentity-using-responseentity-in-spring-application.html
+# https://www.codota.com/code/java/classes/org.springframework.http.ResponseEntity
+# https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/request-response-entity.html
+# https://www.codota.com/code/java/methods/org.springframework.http.ResponseEntity/ok 
+# https://www.codota.com/code/java/methods/org.springframework.http.ResponseEntity/notFound
+# https://programming.vip/docs/use-spring-response-entity-to-process-http-return-requests.html
+# 
+# 
+# 
+# 
+# 
+# 
+
+
+
+
+
+
+# https://medium.com/@auth0/automatically-mapping-dto-to-entity-on-spring-boot-apis-c2aa8f67ec91
+# https://auth0.com/blog/automatically-mapping-dto-to-entity-on-spring-boot-apis/?utm_source=medium&utm_medium=sc&utm_campaign=dto_entity_spring
+# https://www.javadevjournal.com/spring/data-conversion-spring-rest-api/
+# https://stackabuse.com/data-transfer-object-pattern-in-java-implementation-and-mapping/
+# https://amydegregorio.com/2018/08/02/deep-mapping-with-modelmapper/
+# https://amydegregorio.com/2018/05/23/skipping-fields-with-modelmapper/
+# https://amydegregorio.com/2018/01/17/using-custom-modelmapper-converters-and-mappings/
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# https://www.javatpoint.com/spring-boot-cache-provider
+# 
+# 
+# 
+# 
+# 
+# 
+# https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#cache-spel-context-tbl
+# https://memorynotfound.com/spring-caching-example-java-xml-configuration/
+# https://www.logicbig.com/tutorials/spring-framework/spring-integration/cache-evict.html
+# https://stackoverflow.com/questions/25379051/spring-cache-evict-multiple-caches
+# https://docs.spring.io/spring/docs/4.0.x/spring-framework-reference/html/cache.html
+# https://stackoverflow.com/questions/62483596/how-to-use-cacheput-and-cacheevict-on-the-same-method-in-a-spring-boot-applica
+# https://java2practice.com/2013/03/23/spring-cacheable-and-cacheevict-explained-in-simple-terms/
+# https://stackoverflow.com/questions/25245960/putting-two-cache-evict-on-same-method
+# https://stackoverflow.com/questions/45856975/using-cacheable-and-cacheevict-in-spring
+# https://medium.com/trabe/watch-your-cacheables-1279c553ef20
+# https://www.javatips.net/api/org.springframework.cache.annotation.cacheevict
+# https://adamzareba.github.io/Spring-Hibernate-EhCache-Caching/
+# https://codeboje.de/caching-spring-boot/
+# https://www.foreach.be/blog/spring-cache-annotations-some-tips-tricks
+# https://stackoverflow.com/questions/32460606/how-do-i-use-the-key-in-a-condition-in-cacheable-annotation
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# Update Entity using save() or custome queries
+# https://www.baeldung.com/spring-data-jpa-modifying-annotation
+# https://www.baeldung.com/spring-data-crud-repository-save
+# https://codingexplained.com/coding/java/spring-framework/updating-entities-with-update-query-spring-data-jpa
+#
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# Spring Boot REST Testing
+# spring boot test framework
+# spring boot mock test
+# spring boot test framework
+# spring test framework
+# testing spring boot cache
+# https://www.petrikainulainen.net/programming/testing/introduction-to-spring-mvc-test-framework/
+# https://dzone.com/articles/unit-and-integration-tests-in-spring-boot-2
+# https://stackabuse.com/how-to-test-a-spring-boot-application/
+# https://www.youtube.com/watch?v=RbZvXCAtMus
+# https://www.youtube.com/watch?v=8S8o46avgAw
+# https://www.youtube.com/watch?v=ackhP0ubtd4
+# https://www.youtube.com/watch?v=ixIxXRoCr5w
+# https://www.youtube.com/watch?v=pNiRNRgi5Ws
+# https://www.youtube.com/watch?v=1kLwwsfghgE
+# https://www.youtube.com/watch?v=lkxgQRHkw7g
+# https://www.codejava.net/frameworks/spring-boot/junit-tests-for-spring-data-jpa
+# https://www.baeldung.com/spring-boot-testing
+# https://www.springboottutorial.com/unit-testing-for-spring-boot-rest-services
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# spring commandlinerunner
+# https://dzone.com/articles/spring-boot-applicationrunner-and-commandlinerunne
+# https://dev.to/jhooq/using-applicationrunner-in-spring-boot-application-596d
+# https://github.com/gauravrmazra/codefoundry/tree/master/spring-boot-hook-runner
+# https://www.baeldung.com/spring-boot-console-app
+# very extensive on command line runner
+# https://howtodoinjava.com/spring-boot/command-line-runner-interface-example/
+# also very extensive on command line runner
+# https://www.javaguides.net/2020/02/spring-boot-commandlinerunner-example.html
+# https://www.danvega.dev/blog/2017/04/07/spring-boot-command-line-runner/
+# https://www.javadevjournal.com/spring-boot/commandlinerunner-interface-in-spring-boot/
+# http://www.programmergirl.com/commandlinerunner-applicationrunner-spring-boot/
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 

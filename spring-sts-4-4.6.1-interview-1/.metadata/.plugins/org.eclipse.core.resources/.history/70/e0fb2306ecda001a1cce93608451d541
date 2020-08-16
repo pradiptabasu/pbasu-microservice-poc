@@ -1,0 +1,7 @@
+package com.interview.pbasu.seed;
+
+public class SeedDataLoader {
+
+	ProductRepository productRepository;
+
+}

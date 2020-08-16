@@ -1,0 +1,95 @@
+package com.interview.pbasu.service;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.interview.pbasu.domain.Product;
+
+@RestController
+@RequestMapping("/product")
+public interface ProductApiService {
+
+	@Autowired
+    private ProductApiService productService;
+
+    @Autowired
+    ObjectMapper objectMapper;
+
+//    @GetMapping(value = "/findProduct/{userId}")
+//    public ResponseEntity getUser(@PathVariable("userId") String userId){
+//        Product product = productService.getProduct(userId);
+//        return new ResponseEntity<>(product, HttpStatus.OK);
+//    }
+    
+    
+    @PostMapping("/addProduct")
+	public Product createProduct(Product product)
+	{
+		return product;
+	}
+	
+    @GetMapping("/listProduct")
+	public Product findByProductSerial(@RequestParam("productSerial")String productSerial)
+	{
+		return null;
+	}
+    
+    @GetMapping("/listProducts/all")
+	public List<Product> findAllProducts()
+	{
+		return null;
+	}
+	
+    @GetMapping("/listProducts")
+	public List<Product> findAllAvailableProducts()
+	{
+		return null;
+	}
+	
+    @GetMapping("/listProducts")
+	public List<Product> findByProductSKU(@RequestParam("productSKU") String productSKU)
+	{
+		return null;
+	}
+	
+	public List<Product> findByProductNameContaining(@RequestParam("productName") String productName)
+	{
+		return null;
+	}
+	
+	public List<Product> findByProductBrand(@RequestParam("productBrand") String productBrand)
+	{
+		return null;
+	}
+	
+	public List<Product> findByProductColor(@RequestParam("productColor") String productColor)
+	{
+		return null;
+	}
+	
+	public List<Product> findByProductSize(@RequestParam("productSize") String productSize)
+	{
+		return null;
+	}
+	
+	public long countByproductSKU(@RequestParam("productSKU") String productSKU)
+	{
+		return 0;
+	}
+	
+	public long countByProductSeller(@RequestParam("productSeller") String productSeller)
+	{
+		return 0;
+	}
+}

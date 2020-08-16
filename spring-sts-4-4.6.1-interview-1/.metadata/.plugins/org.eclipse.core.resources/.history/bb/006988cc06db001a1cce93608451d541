@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.3.2.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.interview.pbasu</groupId>
+	<artifactId>eCommDataStore</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>eCommDataStore</name>
+	<description>Data Store</description>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+
+<!-- 
+https://stackoverflow.com/questions/44341553/cannot-access-net-sf-ehcache-cachemanager-class-file-for-net-sf-ehcache-cachema
+
+org.ehcache will help us use spring.cache.jcache.config=ehcache.xml
+Ehcache 2 is in the net.sf.ehcache package. Most tutorial are about it since it had a long and useful life. Ehcache 3, the version you configured, is quite new (but of course better) and in the org.ehcache package.
+The package moved because having its own domain was nicer but also because the new version is quite different and be able to cohabit with the old version can be necessary (because of some framework using it).
+Your error comes from the fact that EhCacheCacheManager is using Ehcache 2. Ehcache 3 doesn't need it because it is JCache compliant. So you can use JCacheCacheManager instead.
+So, right now, you have the Spring wiring and an ehcache.xml for Ehcache 2. And a dependency to Ehcache 3. You should align them to fix your problem.
+To use Ehcache 3, the easiest is to add this in your application.properties
+-->
+<!--  -->
+		<dependency>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+-->
+<dependency>
+     <groupId>net.sf.ehcache</groupId>
+     <artifactId>ehcache</artifactId> 
+     <version>2.10.4</version>
+</dependency>
+		<dependency>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
+		</dependency>
+<!-- 		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>4.3.5.Final</version>
+		</dependency>
+-->
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

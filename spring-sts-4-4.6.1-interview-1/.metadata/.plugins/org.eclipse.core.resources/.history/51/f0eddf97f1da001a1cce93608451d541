@@ -1,0 +1,65 @@
+# http://www.h2database.com/html/features.html#connection_modes
+# https://www.baeldung.com/persistence-with-spring-series
+# https://www.baeldung.com/spring-boot-h2-database
+
+# https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+# https://lishman.io/spring-data-jpa-repository-queries
+# findAllByEntityNotNullAndDateBetween(Date begin, Date end);
+# List<Noticia> findByPublishdateGreaterThanOrderByPublishdateDesc(Long publishdate)
+# https://www.logicbig.com/tutorials/spring-framework/spring-data/derived-count-query.html
+# 
+# 
+# 
+# 
+
+
+# CRUD Reposiroty & Caching
+# https://medium.com/@buddhiprabhath/spring-boot-crud-example-with-caching-c2c9b7fd8f05
+# https://javadeveloperzone.com/spring-boot/spring-boot-database-cache-example/
+# Cacheable value key condition (before method execution) unless (after method execution)  https://www.youtube.com/watch?v=6uWU3gDhZk4&t=4s
+# Spring Default Cache expiry setup - 
+# Spring EhCache + H2 + Load Data https://www.youtube.com/watch?v=cWqNeANzEz0
+# https://www.youtube.com/watch?v=TiEpi92Whtg&t=9s
+# 
+# 
+# 
+# 
+# spring simple cache manager expiration
+# 
+# 
+# 
+# 
+
+
+
+# 
+# https://medium.com/@buddhiprabhath/spring-boot-crud-example-with-caching-c2c9b7fd8f05
+# 
+# 
+# https://dzone.com/articles/jpa-caching-with-hazelcast-hibernate-and-spring-bo
+# https://piotrminkowski.com/2017/05/10/in-memory-data-grid-with-hazelcast/
+# https://egkatzioura.com/2017/02/12/hibernate-caching-with-hazelcast-basics/
+# https://egkatzioura.com/2017/02/12/hibernate-caching-with-hazelcast-get-started/
+# https://egkatzioura.com/2017/01/11/spring-boot-and-cache-abstraction-with-hazelcast/
+# https://egkatzioura.com/2017/02/12/hibernate-caching-with-hazelcast-get-started/
+# https://egkatzioura.com/
+# https://dzone.com/articles/caching-with-spring-boot-and-hazelcast?fromrel=true
+# 
+# 
+# https://dzone.com/articles/spring-hibernate-ehcache-caching?fromrel=true
+# 
+# https://dzone.com/articles/safeguard-spring-app-from-cache-failure?fromrel=true
+# 
+# 
+# 
+
+
+
+
+#CRUDRepository
+#JpaRepository
+#JdbcTemplate
+#Load seed data using CommandLineRunner or run()
+#Create database, Load seed data, and drop data & database using SQL files
+
+
