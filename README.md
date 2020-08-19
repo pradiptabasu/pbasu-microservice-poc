@@ -801,3 +801,65 @@ https://github.com/MitocGroup/deep-microservices-helloworld
 * 
 * 
 * 
+
+
+# Anti corruption layer
+* https://dev.to/asarnaout/the-anti-corruption-layer-pattern-pcd
+* https://microservices.io/i/PatternsRelatedToMicroservices.jpg
+
+
+
+
+# Chaos Testing
+* https://techbeacon.com/app-dev-testing/chaos-engineering-testing-34-tools-tutorials
+* https://boyter.org/2016/07/chaos-testing-engineering/
+* https://www.gremlin.com/chaos-monkey/
+* https://medium.com/better-programming/chaos-engineering-chaos-testing-your-http-micro-services-acc99d145515
+* https://dzone.com/articles/chaos-engineering-a-comprehensive-guide
+* https://netflixtechblog.com/product-integration-testing-at-the-speed-of-netflix-72e4117734a7
+* https://netflixtechblog.com/automated-testing-on-devices-fc5a39f47e24
+* https://launchdarkly.com/blog/testing-in-production-the-netflix-way/
+* https://conferences.oreilly.com/software-architecture/sa-ny-2019/public/schedule/detail/71337.html
+* 
+* 
+* 
+
+
+# Telltale: Netflix Application Monitoring Simplified
+* https://netflixtechblog.com/telltale-netflix-application-monitoring-simplified-5c08bfa780ba
+
+# APISIX: An Open Source API Gateway for Microservices
+* https://thenewstack.io/apisix-an-open-source-api-gateway-for-microservices/
+
+# Apache Skywalking
+* http://skywalking.apache.org/blog/
+* https://www.youtube.com/watch?v=byaoaRKN4Ts
+* https://github.com/apache/skywalking
+* https://streamnative.io/blog/tech/2019-10-10-use-apache-skywalking-to-trace-apache-pulsar/
+* https://thenewstack.io/apache-skywalking-use-profiling-to-fix-the-blind-spot-of-distributed-tracing/
+* https://thenewstack.io/skywalking-apm-for-the-heterogeneous-new-stack/
+* 
+
+
+# Microservice Metrices & Microservice Testing Metrices
+* https://www.gocd.org/tags/cd-for-microservices.html
+* https://www.infoq.com/articles/twelve-testing-techniques-microservices-intro/
+* https://artillery.io/blog/end-to-end-performance-testing-microservices
+* https://techbeacon.com/app-dev-testing/26-resources-will-help-you-master-microservices-monitoring
+* https://microservices.io/patterns/observability/application-metrics.html
+* https://openliberty.io/guides/microprofile-metrics.html
+* https://performancelabus.com/load-testing-for-microservices/
+* https://microservices.io/patterns/observability/application-metrics.html
+* https://www.ctouniverse.com/metrics/microservices/
+* https://www.kentik.com/blog/metrics-for-microservices/
+* https://dzone.com/articles/metrics-for-microservices
+* https://dzone.com/articles/an-approach-to-product-quality-for-microservices-i
+* https://www.sealights.io/agile-testing/test-metrics/regression-testing-in-the-microservices-age/
+* https://www.infoq.com/articles/twelve-testing-techniques-microservices-intro/
+* https://netflixtechblog.com/automated-testing-on-devices-fc5a39f47e24
+* 
+* 
+* 
+
+
+
