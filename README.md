@@ -863,3 +863,22 @@ https://github.com/MitocGroup/deep-microservices-helloworld
 
 
 
+# Java Dependency Graph
+*	https://github.com/janssk1/maven-graph-plugin/wiki/Manual
+*	https://github.com/ferstl/depgraph-maven-plugin/wiki/Manual
+*	https://stackoverflow.com/questions/41319714/visualize-maven-dependencies-as-graph
+*	https://medium.com/androiddevelopers/dependency-injection-in-a-multi-module-project-1a09511c14b7
+*	https://www.netlify.com/blog/2018/08/23/how-to-easily-visualize-a-projects-dependency-graph-with-dependency-cruiser/
+*	https://ferstl.github.io/depgraph-maven-plugin/aggregate-mojo.html
+*	https://www.jarchitect.com/dependencycycle
+*	https://dzone.com/articles/using-sonarqube-and-sonargraph-to-detect-cyclic-dependencies
+*	https://www.taringamberini.com/en/blog/java/ready-to-use-java-dependencies-vulnerability-checker/
+*	https://www.cppdepend.com/Doc_VS_Arch
+*	https://www.jarchitect.com/Doc_VS_Arch
+*	https://github.com/clarkware/jdepend
+*	http://blog.schauderhaft.de/degraph/
+	
+	
+	
+
+
