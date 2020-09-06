@@ -882,3 +882,42 @@ https://github.com/MitocGroup/deep-microservices-helloworld
 	
 
 
+* cluster dendrogram observable for spring project
+* cluster dendrogram observable for Node.js
+* https://observablehq.com/@webslayer/cluster-dendrogram
+* https://observablehq.com/@d3/cluster-dendrogram
+* https://bl.ocks.org/mbostock/e9ba78a2c1070980d1b530800ce7fa2b
+* https://observablehq.com/@dhlanm/cluster-dendrogram
+* https://observablehq.com/@d3/radial-dendrogram
+* spring dependency diagram
+* visual maven dependency tree
+* https://www.us.cgi.com/blog/2011/04/12/a-visual-maven-dependency-tree-view
+* https://dzone.com/articles/visualize-maven-project
+* https://dzone.com/articles/10-effective-tips-on-using-maven
+* java build dependency graph by scanning git repository
+* spring dependency graph github
+* blog monkey codes actuator and prometheus
+* blog code monkey codes spring visualizing a spring contxt graph
+* https://blog.monkey.codes/visualizing-a-spring-context-graph/
+* https://github.com/monkey-codes/spring-graph
+* https://canvasjs.com/spring-mvc-charts/
+* https://github.com/aigor/spring-beans-visualized
+* https://github.com/making/beansviz-spring-boot-actuator
+* https://github.com/zouabimourad/spring-live-bean-graph
+* medium swlh how to visualize a spring integration graph with neo4j
+* https://medium.com/swlh/how-to-visualize-a-spring-integration-graph-with-neo4j-61927ba5bb5a
+* https://medium.com/swlh/tagged/spring-integration
+* https://medium.com/swlh/tagged/neo4j
+* https://medium.com/swlh/tagged/graph-database
+* how to generate a graph using maven dependency
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+* 
+
+
+
