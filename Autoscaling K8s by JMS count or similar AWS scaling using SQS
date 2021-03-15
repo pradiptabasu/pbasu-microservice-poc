@@ -1,0 +1,20 @@
+autoscale kubernetes pod based on jms pending messages
+https://learnk8s.io/blog/scaling-spring-boot-microservices
+https://dzone.com/articles/autoscaling-your-kubernetes-microservice-with-keda
+https://kyle-b.medium.com/autoscaling-kubernetes-based-on-sqs-queue-size-8f08f73b4e2b
+https://medium.com/practo-engineering/launching-worker-pod-autoscaler-3f6079728e8b
+https://github.com/sideshowbandana/k8s-sqs-autoscaler
+https://keda.sh/
+https://aws.amazon.com/blogs/compute/scaling-kubernetes-deployments-with-amazon-cloudwatch-metrics/
+https://rancher.com/docs/rancher/v2.x/en/k8s-in-rancher/horitzontal-pod-autoscaler/
+https://learnk8s.io/blog/scaling-spring-boot-microservices
+https://dzone.com/articles/autoscaling-your-kubernetes-microservice-with-keda
+https://github.com/learnk8s/spring-boot-k8s-hpa
+https://github.com/kubernetes/community/issues/2210
+https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/
+https://stackoverflow.com/questions/37377119/in-kubernetes-how-do-i-autoscale-based-on-the-size-of-a-queue
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html
+https://aws.amazon.com/sqs/
+https://aws.amazon.com/premiumsupport/knowledge-center/lambda-sqs-scaling/
+https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html
+https://medium.com/@gundogdu.emre/sqs-based-ecs-service-autoscaling-88772f4e260c
